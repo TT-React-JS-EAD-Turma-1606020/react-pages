@@ -1,0 +1,13 @@
+a {
+  outline: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid blue;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}

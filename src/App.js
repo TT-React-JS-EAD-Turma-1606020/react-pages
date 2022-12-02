@@ -1,28 +1,30 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Header } from "./components/Header";
 import { Contato } from "./pages/Contato";
+import { DepartamentoDetalhe } from './pages/DepartamentoDetalhe';
 import { Departamentos } from "./pages/Departamentos";
 import { Home } from "./pages/Home";
-import './styles.css';
+import { GlobalStyle } from './styles/global';
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Header />
+    <BrowserRouter>
+      <Header />
 
-        <section>
-          <Routes>
-            <Route path="/" element={<Home />} />
+      <section>
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-            <Route path="/departamentos" element={<Departamentos />} />
+          <Route path="/departamentos" element={<Departamentos />} />
 
-            <Route path="/contato" element={<Contato />} />
-          </Routes>
-        </section>
-      </BrowserRouter>
+          <Route path="/contato" element={<Contato />} />
 
-    </div >
+          <Route path="/departamentos/:id/:nome" element={<DepartamentoDetalhe />} />
+        </Routes>
+      </section>
+
+      <GlobalStyle />
+    </BrowserRouter>
   );
 }
 

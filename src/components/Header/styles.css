@@ -10,4 +10,6 @@ a {
   display: flex;
   gap: 1rem;
   margin-bottom: 2rem;
+
+  background-color: white;
 }

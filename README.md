@@ -17,3 +17,15 @@
   - Navegação entre telas
     - Link
     - useNavigation
+
+# Aula 9
+
+- Revisão da aplicação de página
+- React router dom
+  - Navegação entre telas com useNavigation
+  - Voltar a tela com useNavigation
+  - Passar parâmetros dinâmicos por rotas, no nosso caso foi o id
+- Refatoramos a aplicação de filmes
+  - Adicionamos o roteamento entre Home e Details
+  - Navegação para Details, passando o id pela URL
+  - Página de Details dinâmica recebendo o id da URL
